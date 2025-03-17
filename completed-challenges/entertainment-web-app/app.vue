@@ -1,6 +1,17 @@
+<script setup lang="ts">
+import '@unocss/reset/tailwind.css'
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
+
+<style>
+html, body , #__nuxt{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+</style>
