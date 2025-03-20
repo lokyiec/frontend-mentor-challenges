@@ -1,10 +1,12 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="overflow-visible p-0 md:py-[23px] md:px-[25px] lg:p-[32px]">
-    <AppNavigation />
-    <slot />
+  <div class="flex flex-col lg:flex-row h-screen gap-1 overflow-visible">
+    <AppNavigation class="lg:sticky lg:top-0 flex-none md:m-6 lg:m-8" />
+    
+    <main class="flex-1 overflow-y-auto py-16 overflow-x-visible">
+      <slot />
+    </main>
   </div>
 </template>
 
